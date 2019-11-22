@@ -1,0 +1,1085 @@
+@import url('https://fonts.googleapis.com/css?family=Alata|Merriweather|Permanent+Marker&display=swap');
+body {
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	background: black;
+	font-family:'Alata', sans-serif;
+}
+
+nav {
+  background: #000;
+}
+nav span {
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 10px 0 5px;
+  margin: 0;
+}
+nav.align-right ul li {
+  float: right;
+}
+nav.align-center ul {
+  text-align: center;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Alata', sans-serif;
+  /*font-weight: 700;*/
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+nav ul li a:hover {
+  color: orange;
+}
+nav ul li a:hover:before {
+  width: 100%;
+}
+nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: white;
+  opacity: .5;
+}
+nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: orange;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+
+#logo {
+	position: absolute;
+	left: 50%;
+  	top: 40vh;
+  	transform: translate(-50%, -50%);
+}
+#logo img{
+	width: 1000px;
+	height: auto;
+	text-align: center;
+}
+
+#logo p {
+	color: black;
+	font-size: 20px;
+	font-family: 'Permanent Marker',cursive;
+	text-align: center;
+}
+
+#visi{
+	position: absolute;
+	top: 1000px;
+	text-align: center;
+	width: 100%;
+	font-family:'Merriweather',serif;
+	font-size: 20px;
+	color: orange;
+}
+
+.logo3{
+	position: relative;
+}
+
+#visi p {
+	padding: 0px 50px;
+
+}
+
+#visi2 p {
+	padding: 0px 200px;
+}
+
+#visi img {
+	height: 100px;
+	width: 100px;
+
+}
+
+.misi {
+	position: relative;
+	left: 100px;
+}
+
+.misi2 {
+	position: relative;
+	right: 100px;
+}
+
+
+/*************** LAND ***************/
+#land {
+	background:url(../bg-land.png);
+	height: 700px;
+	min-width: 1348px;
+	top: 0;
+	background-size:cover;
+}
+
+
+
+#runner img{
+	top: 198px;
+	left: 32px;
+	position: absolute;
+	height:30px;
+	width:52px;
+	animation: walk 1s steps(6) infinite,
+				forward 18s linear infinite;
+}
+
+#runner6 img{
+	top: 308px;
+	left: 15px;
+	position: absolute;
+	height:30px;
+	width:52px;
+	animation: walk 1s steps(8) infinite,
+				forward 30s linear infinite;
+}
+
+@keyframes walk{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes forward{
+	0%{
+		transform:translateX(-100px);
+	}
+	100%{
+		transform: translateX(1285px);
+	}
+}
+
+
+#runner2 img{
+	top: 160px;
+	position: absolute;
+	height:15px;
+	width:30px;
+	animation: walk 1s steps(5) infinite,
+				forward 13s linear infinite;
+}
+
+@keyframes walk{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes forward{
+	0%{
+		transform:translateX(-100px);
+	}
+	100%{
+		transform: translateX(1285px);
+	}
+}
+
+#runner3 img{
+	top: 583px;
+	right: 74px;
+	position: absolute;
+	height:40px;
+	width:45px;
+}
+
+#runner4 img{
+	top: 562px;
+	left: 146px;
+	position: absolute;
+	height:20px;
+	width:35px;
+}
+
+#runner5 img{
+	top: 245px;
+	position: absolute;
+	height:40px;
+	width:55px;
+	animation: walkk 1s steps(5) infinite,
+				forwardd 20.1s linear infinite;
+}
+
+@keyframes walkk{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes forwardd{
+	0%{
+		transform:translateX(1290px);
+	}
+	100%{
+		transform: translateX(-100px);
+	}
+}
+
+#runner7 img{
+	top: 147px;
+	position: absolute;
+	height:30px;
+	width:45px;
+	animation: walkkk 12s steps(15) infinite,
+				forwarddd 13s linear infinite;
+}
+
+@keyframes walkkk{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes forwarddd{
+	0%{
+		transform:translateX(1290px);
+	}
+	100%{
+		transform: translateX(-100px);
+	}
+}
+
+#runner8 img{
+	top: 586px;
+	left: 15px;
+	position: absolute;
+	height:80px;
+	width:100px;
+	animation: walki 1s steps(8) infinite,
+				forwardo 5.99s linear infinite;
+}
+
+@keyframes walki{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes forwardo{
+	0%{
+		transform:translateX(-300px);
+	}
+	100%{
+		transform: translateX(1285px);
+	}
+}
+
+#runner9 img{
+	top: 576px;
+	left: 15px;
+	position: absolute;
+	height:90px;
+	width:100px;
+	animation: walkii 1s steps(5) infinite,
+				forwardoi 5.9s linear infinite;
+}
+
+@keyframes walkii{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes forwardoi{
+	0%{
+		transform:translateX(-100px);
+	}
+	100%{
+		transform: translateX(1285px);
+	}
+}
+
+#runner10 img{
+	top: 580px;
+	right: 345px;
+	position: absolute;
+	height:90px;
+	width:100px;
+}
+
+#runner11 img{
+	top: 600px;
+	right: 465px;
+	position: absolute;
+	height:50px;
+	width:90px;
+}
+
+#runner12 img{
+	top: 420px;
+	right: 855px;
+	position: absolute;
+	height:210px;
+	width:180px;
+}
+
+#runner13 img{
+	top: 430px;
+	right: 935px;
+	position: absolute;
+	height:220px;
+	width:173px;
+}
+
+#runner14 img{
+	top: 460px;
+	right: 1075px;
+	position: absolute;
+	height:190px;
+	width:120px;
+}
+
+#runner15 img{
+	top: 418px;
+	right: 973px;
+	position: absolute;
+	height:50px;
+	width:35px;
+}
+
+#runner16 img{
+	top: 340px;
+	left: 203px;
+	position: absolute;
+	height:100px;
+	width:250px;
+}
+
+/*bubble*/
+#particles-js {
+	padding-top: 15%;
+	bottom: 0;
+	height: 60%;
+}
+
+/*************** SEA ***************/
+#sea {
+	background:url(../bg-sea.png);
+	top: 800px;
+	height: 800px;
+	min-width: 1348px;
+	background-size:cover;
+}
+
+/*Dolphin*/
+#dolphin1 img {
+	top: 1000px;
+	left: 20%;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	animation: swimright1 18s linear infinite;
+}
+#dolphin2 img {
+	top:1100px;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	animation: swimright1 15s linear infinite;
+}
+
+/*Fish*/
+#fish img {
+	top: 1000px;
+	right: 20%;
+	position: absolute;
+	width: 70px;
+	animation: swimright2 30s linear infinite;
+}
+#fish-1 img {
+	top: 1050px;
+	right: 18%;
+	position: absolute;
+	width: 70px;
+	animation: swimright2 31s linear infinite;
+}
+#fish-2 img {
+	top: 1050px;
+	right: 18%;
+	position: absolute;
+	width: 60px;
+	animation: swimright2 29s linear infinite;
+}
+#fish-3 img {
+	top: 1000px;
+	right: 18%;
+	position: absolute;
+	width: 60px;
+	animation: swimright2 32s linear infinite;
+}
+#fish-4 img {
+	top: 1025px;
+	right: 18%;
+	position: absolute;
+	width: 60px;
+	animation: swimright2 28s linear infinite;
+}
+
+/*Fish2*/
+#fish2 img {
+	top: 1200px;
+	right: 80%;
+	position: absolute;
+	width: 75px;
+	animation: swimleft 40s linear infinite;
+}
+#fish2-1 img {
+	top: 1280px;
+	right: 70%;
+	position: absolute;
+	width: 70px;
+	animation: swimleft 41s linear infinite;
+}
+#fish2-2 img {
+	top: 1250px;
+	right: 75%;
+	position: absolute;
+	width: 72px;
+	animation: swimleft 38s linear infinite;
+}
+/*Fish3*/
+#fish3 img {
+	top: 1350px;
+	left: 10%;
+	position: absolute;
+	width: 100px;
+	animation: swimright2 45s linear infinite;
+}
+/*Fish4*/
+#fish4 img {
+	top: 1250px;
+	left: 20%;
+	position: absolute;
+	width: 50px;
+	animation: swimright1 20s linear infinite;
+}
+/*Fish5*/
+#fish5 img {
+	top: 1110px;
+	right: 80%;
+	position: absolute;
+	width: 65px;
+	animation: swimleft 36s linear infinite;
+}
+/*Jelly Fish*/
+/*#jelly {
+	transform: rotate(-30deg);
+}*/
+#jelly img {
+	top: 1257px;
+	right: 18%;
+	position: absolute;
+	width: 100px;
+	animation: swimright2 45s linear infinite;
+}
+/*Sea Horse*/
+#seahorse img {
+	top: 1345px;
+	float: right;
+	right: 18%;
+	position: absolute;
+	width: 80px;
+}
+#seahorse-1 img {
+	top: 1325px;
+	float: right;
+	right: 21%;
+	position: absolute;
+	width: 80px;
+}
+#seahorse-2 img {
+	top: 1338px;
+	float: right;
+	right: 15%;
+	position: absolute;
+	width: 80px;
+}
+/*Shark*/
+#shark img {
+	top: 1100px;
+	float: right;
+	right: 5%;
+	position: absolute;
+	width: 380px;
+	animation: swimleft2 25s linear infinite;
+}
+/*Sting Ray*/
+#ray img {
+	top: 1280px;
+	float: left;
+	left: 5%;
+	position: absolute;
+	width: 280px;
+	animation: swimleft1 50s linear infinite;
+}
+/*Turtle*/
+#turtle img{
+	top: 1310px;
+	float: right;
+	right: 40%;
+	position: absolute;
+	width: 100px;
+	animation: swimleft1 40s linear infinite;
+}
+@keyframes swimright1 {
+	0%
+	{
+		transform: translateY(-100px);
+		left: -25%; 
+	}
+	25%
+	{
+		transform: translateY(0px);
+	}
+	50%
+	{
+		transform: translateY(100px);
+	}
+	75%
+	{
+		transform: translateY(0px);
+	}
+	100%
+	{
+		transform: translateY(-100px);
+		left: 150%;
+	}
+	
+}
+
+@keyframes swimright2 {
+	0%
+	{
+		transform: translateY(-50px);
+		left: -25%; 
+	}
+	25%
+	{
+		transform: translateY(0px);
+	}
+	50%
+	{
+		transform: translateY(50px);
+	}
+	75%
+	{
+		transform: translateY(0px);
+	}
+	100%
+	{
+		transform: translateY(-50px);
+		left: 150%;
+	}
+	
+}
+/*@keyframes swimright3 {
+	0%
+	{
+		transform: translateY(200px);
+		left: 0%; 
+		top: 100%;
+	}
+	25%
+	{
+		transform: translateY(220px);
+		top: 100%;
+	}
+	50%
+	{
+		transform: translateY(250px);
+		top: 100%;
+	}
+	75%
+	{
+		transform: translateY(270px);
+		top: 100%;
+	}
+	100%
+	{
+		transform: translateY(290px);
+		left: 150%;
+		top: 100%;
+	}
+	
+}*/
+
+
+@keyframes swimleft {
+	0%
+	{
+		transform: translateY(50px);
+		right: -25%; 
+	}
+	25%
+	{
+		transform: translateY(0px);
+	}
+	50%
+	{
+		transform: translateY(-50px);
+	}
+	75%
+	{
+		transform: translateY(0px);
+	}
+	100%
+	{
+		transform: translateY(50px);
+		right: 150%;
+	}
+	
+}
+
+@keyframes swimleft2 {
+	0%
+	{
+		transform: translateY(10px);
+		right: -25%; 
+	}
+	25%
+	{
+		transform: translateY(0px);
+	}
+	50%
+	{
+		transform: translateY(-10px);
+	}
+	75%
+	{
+		transform: translateY(0px);
+	}
+	100%
+	{
+		transform: translateY(10px);
+		right: 150%;
+	}
+	
+}
+
+#contact {
+	z-index: 10;
+}
+.col-md-12 {
+	text-align: center;
+}
+.col-md-12 h1 {
+	font-weight: 600;
+}
+.col-md-12 h1, .social p,.social i, .closing p {
+	color: #ffd700;
+}
+.col-md-6 {
+	z-index: 10;
+}
+
+form{
+	padding: 0;
+	text-align: center;
+	display: block;
+	/*margin-top: 50px;*/
+}
+form p {
+	text-align: left;
+	color: #ffd700;
+}
+.form-control{
+	width: 600px;	
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	line-height: 30px;
+	font-size: 18px;
+	color: white;
+}
+
+.form-control::-webkit-input-placeholder{
+	font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+input{
+	height: 40px;
+}
+
+form .submit{
+	background: #ff5722;
+	border-color: transparent;
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	height: 45px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+form .submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
+
+#cave {
+	background:url(../cave.png);
+	height: 700px;
+	max-width: 1400px;
+	bottom: 0px;
+	background-size:cover;
+}
+
+#cave form{
+	padding: 7% 7% 8.5% 21%;
+}
+.social {
+	padding: 20% 21% 4% 7%;
+}
+.social i {
+	padding-right: 10px;
+}
+.social .add p {
+	margin-left: 50px;
+}
+.social img {
+	text-align: center;
+}
+.social ul {
+	text-align: center;
+	padding-top: 30px;
+	padding-left: 0;
+}
+.social ul li {
+	display: inline-block;
+}
+.social ul li svg.svg-inline--fa {
+	transition: .5s ease;
+}
+.social ul li svg.svg-inline--fa:hover {
+	color: #fff;
+}
+.closing {
+	text-align: center;
+}
+
+.bat1, .bat2 {
+	z-index: 1;
+}
+.bat1 img{
+	top: 1670px;
+	right: 235px;
+	position: absolute;
+	height:100px;
+	width:120px;
+}
+
+.bat2 img{
+	top: 1640px;
+	left: 1px;
+	position: absolute;
+	height:112px;
+	width:112px;
+	animation: go 1s steps(5) infinite,
+				fly 18s linear infinite;
+}
+
+@keyframes go{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 340px;
+	}
+}
+
+@keyframes fly{
+	0%{
+		transform:translateX(-100px);
+	}
+	100%{
+		transform: translateX(1285px);
+	}
+}
+
+/****************************MEDIA*****************************/
+/*Tablet*/
+@media screen and (max-width: 1050px) {
+  /************TOP*************/
+	body {
+  	overflow-x: hidden;
+  	}
+  	#logo {
+  	top: 25vh
+  	}
+  	#logo img {
+  	width: 100%;
+  	} 
+	#logo img{
+	top: 0%;
+	/*left: 25%*/
+	}
+	#logo p {
+	top: 0%;
+	}
+
+	/*MIDDLE*/
+	#visi h2 {
+  	font-size: 1.5rem;
+  	}
+	#visi2 ,.misi p, .misi2 p, .col-sm-4 {
+  	font-size: 1.2rem;
+  	}
+
+  	/*BOTTOM*/
+  	.social ul i {
+	font-size: .8rem;
+	}
+  /*	.social {
+	padding: 60px 100px 30px 50px;
+	}
+	.social p i {
+	margin-left: 0px;
+	}*/
+
+}
+/*TABLET2*/
+@media screen and (max-width: 800px) {
+	.social i {
+	font-size: .5rem;
+	}
+	#cave form{
+	padding: 40px 10px 60px 60px;
+	}
+	.social {
+	padding: 40px 60px 30px 10px;
+	}
+	.social .add p {
+	margin-left: 0px;
+	}
+}
+/*TABLET3*/
+@media screen and (max-width: 768px) {
+	/*MIDDLE*/
+	#visi h2 {
+  	font-size: 1.2rem;
+  	}
+	#visi2 p {
+  	padding: 0px 60px;
+  	font-size: 1rem;
+  	}
+  	.misi {
+	left: 30px;
+	}
+	.misi p {
+	font-size: 1rem;
+	}
+	.col-sm-4 {
+	font-size: 1rem;
+	}
+	.misi2 {
+	right: 30px;
+	}
+	.misi2 p {
+	font-size: 1rem;
+	}
+
+	/*BOTTOM*/
+	#row .col-md-12 h1 {
+	size: 1.5rem !important;
+	}
+	.form-control{
+	width: 280px !important;	
+	height: 50px !important;
+	line-height: 30px;
+	font-size: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	#cave form{
+	padding: 10px 20px 10px 60px;
+
+	}
+	.social {
+	padding: 15px 60px 10px 20px;
+	/*text-align: center;*/
+	}
+
+	.social ul {
+	padding-top: 5px;
+	}
+	.social ul li {
+	display: inline-block;
+	padding-left: 0px;
+	}
+	.social .add i {
+	font-size: .5rem;
+	}
+	.social ul i {
+	font-size: .7rem;
+	}
+	.closing img {
+	width: 100px;
+	}
+
+}
+
+@media screen and (max-width: 766px)
+{
+	#cave form{
+	padding: 10px 100px;
+
+	}
+	.social {
+	padding: 30px 100px;
+	text-align: center;
+	}
+	.add p {
+	margin:0 ;
+	}
+
+}
+
+/*Phone1*/
+@media screen and (max-width: 575px) {
+	#logo {
+  	top: 40vh
+  	}
+	#visi h2 {
+  	font-size: 1rem;
+  	}
+	#visi2 p {
+  	padding: 0px 15px;
+  	font-size: 0.7rem;
+  	}
+  	.misi {
+	left: 0px;
+	}
+	.misi p {
+	font-size: 0.7rem;
+	}
+	.col-sm-4 {
+	font-size: 0.7rem;
+	}
+	.misi2 {
+	right: 0px;
+	}
+	.misi2 p {
+	font-size: 0.7rem;
+	}
+	.misi img {
+	width: 70px;
+	height: 70px;
+	}
+	#particles-js {
+	height: 80%;
+	}
+	/*BOTTOM*/
+	#contact {
+	padding-top: 15%;
+	}
+	#contact .col-md-12 h1 {
+	font-size: 1.3rem;
+	}
+	#contact p {
+	font-size: .7rem;
+	}
+	.form-control{
+	width: 280px !important;	
+	height: 35px !important;
+	line-height: 30px;
+	font-size: .7rem !important;
+	}
+	#cave form{
+	padding: 10px 50px;
+	}
+	.social {
+	padding: 15px 50px;
+	}
+	.social ul i {
+	font-size: .5rem;
+	}
+	.closing img {
+	width: 100px;
+	}
+
+}
+@media screen and (max-width: 450px) {
+	#contact {
+	padding-top: 25%;
+	}
+}
+/*PHONE2*/
+@media screen and (max-width: 376px) {
+	#logo {
+  	top: 40vh
+  	}
+	#cave form {
+	left: 6.2vh !important; 
+	}
+	#cave form{
+	padding: 10px 30px;
+
+	}
+	.social {
+	padding: 15px 30px;
+	}
+}

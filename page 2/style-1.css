@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css?family=Alata|Merriweather|Permanent+Marker&display=swap');
+body {
+      background: #000;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+      font-family: 'Alata', sans-serif;
+      overflow-x: hidden
+}
+
+nav {
+  background: #000;
+}
+nav span {
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 10px 0 5px;
+  margin: 0;
+}
+nav.align-right ul li {
+  float: right;
+}
+nav.align-center ul {
+  text-align: center;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Alata', sans-serif;
+  /*font-weight: 700;*/
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+nav ul li a:hover {
+  color: orange;
+}
+nav ul li a:hover:before {
+  width: 100%;
+}
+nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: white;
+  opacity: .5;
+}
+nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: orange;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+/****************************JUMBOTRON****************************/
+.jumbotron {
+  /*background: url('head-bg.png');*/
+  /*background-color: #000;*/
+  margin: 0;
+}
+.jumbotron h1 {
+  font-size: 64px;
+}
+/*.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #1bff00;
+  margin: 0 auto;
+}*/
+
+/******* Opening ********/
+.jumbotron.text-center.header {
+  background: url('sky.png');
+
+}
+.header {
+  padding: 150px;
+  text-align: center;
+}
+.header h1, .header p {
+  color: #ffd700;
+}
+.header ul li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.header ul li img {
+  padding-bottom: 40px;
+}
+.intro h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/******* Isi *******/
+.isi {
+  background: url('bg-4.png') no-repeat;
+}
+.isi .jumbotron {
+  background-color: rgba(0,0,0,0);
+}
+.isi .jumbotron ul li {
+  display: inline-block;
+  float: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 10px;
+}
+.fa-wind, #bird h1 {
+  color:  #affbff;
+}
+.fa-pagelines, #mammal h1 {
+  color:  #1ad500;
+}
+#reptile h1  {
+  color:  #e46100;
+}
+.fa-water, #amphibi h1 {
+  color:  #bbd100;
+}
+.fa-tint, #fish h1{
+  color: #0070ff;
+}
+.ke-atas {
+   position: sticky;
+   float: right;
+   right: 3%;
+   top: 87%;
+   z-index: 10;
+}
+.ke-atas button {
+  background: #000;
+  border-color: none;
+  border-radius: 100%;
+  padding: 5px 15px;
+  transition: .5s ease;
+  
+}
+.ke-atas button i {
+  color: #ffd700
+}
+.ke-atas button:hover {
+  background-color: #fff;
+ /* border-radius: 100%*/
+}
+/*.container {
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  display: flex;
+}
+.container .btn-holder {
+  justify-content: flex-end;
+  display: flex;
+}*/
+/******************************SWIPER*******************************/
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+}
+.img {
+  text-align: center;
+}
+.img img {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  transition: transform 1s ease;
+}
+.img img:hover {
+  transform: scale(1.1);
+  /*cursor: zoom-in;*/
+}
+.text {
+  color: #fff;
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+}
+
+/******ARROW*******/
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 0px !important;
+    padding: 30px 30px;
+    color: #FFE000;
+    font-size: 16px;
+    /*background-color: rgba(255,255,255,0.7);*/
+    transition: all 0.5s ease;
+    border-radius: 100%;
+    border-color: #000;
+}
+.swiper-button-next:hover, .swiper-container-rtl .swiper-button-prev:hover {
+  background-color: rgba(255,255,255);
+  cursor: pointer;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 0px !important;
+  padding: 30px 30px;
+  color: #FFE000;
+  /*background: rgba(255,255,255,0.7);*/
+  transition: all 0.5s ease;
+  border-radius: 100%;
+  border-color: #000;
+}
+.swiper-button-prev:hover, .swiper-container-rtl .swiper-button-next:hover {
+  background-color: rgba(255,255,255);
+  cursor: pointer;
+}
+
+/********************** MODAL***********************/
+/*.modal {
+  top: 20%;
+}*/
+.modal-dialog {
+  max-width: 630px;
+  /*min-height: 600px;*/
+}
+/*.modal-content {
+   background: url('modal/panda.png');
+}*/
+
+.modal table {
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*margin-bottom: 20px;*/
+}
+.modal table td {
+  padding: 5px;
+  font-size: 15px;
+}
+.modal h3,.modal p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal img {
+  position: absolute;
+}
+
+.modal-body1 .fact {
+  margin-left: 50%;
+}
+
+.modal-body1 {
+  background: url('modal/Birds/parrot.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body2 .fact {
+  margin-left: 50%;
+}
+
+.modal-body2 {
+  background: url('modal/Birds/owl.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body3 .fact {
+  margin-left: 50%;
+}
+
+.modal-body3 {
+  background: url('modal/Birds/eagle.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body4 .fact {
+  margin-left: 50%;
+}
+
+.modal-body4 {
+  background: url('modal/Birds/dove.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body5 .fact {
+  margin-left: 50%;
+}
+
+.modal-body5 {
+  background: url('modal/Birds/cassowary.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body6 .fact {
+  margin-left: 50%;
+}
+
+.modal-body6 {
+  background: url('modal/Birds/hummingbird.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body7 .fact {
+  margin-left: 50%;
+}
+
+.modal-body7 {
+  background: url('modal/Birds/toucan.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body8 .fact {
+  margin-left: 50%;
+}
+
+.modal-body8 {
+  background: url('modal/mammals/panda.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body9 .fact {
+  margin-left: 50%;
+}
+
+.modal-body9 {
+  background: url('modal/mammals/cheetah.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body10 .fact {
+  margin-left: 50%;
+}
+
+.modal-body10 {
+  background: url('modal/mammals/giraffe.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body11 .fact {
+  margin-left: 50%;
+}
+
+.modal-body11 {
+  background: url('modal/mammals/palmcivet.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body12 .fact {
+  margin-left: 50%;
+}
+
+.modal-body12 {
+  background: url('modal/mammals/elephant.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body13 .fact {
+  margin-left: 50%;
+}
+
+.modal-body13 {
+  background: url('modal/mammals/lion.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+.modal-body14 .fact {
+  margin-left: 50%;
+}
+
+.modal-body14 {
+  background: url('modal/mammals/tiger.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body15 .fact {
+  margin-left: 50%;
+}
+
+.modal-body15 {
+  background: url('modal/mammals/wolf.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body16 .fact {
+  margin-left: 50%;
+}
+
+.modal-body16 {
+  background: url('modal/Reptile/monitorlizard.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body17 .fact {
+  margin-left: 50%;
+}
+
+.modal-body17 {
+  background: url('modal/Reptile/crocodile.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body18 .fact {
+  margin-left: 50%;
+}
+
+.modal-body18 {
+  background: url('modal/Reptile/chameleon.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body19 .fact {
+  margin-left: 50%;
+}
+
+.modal-body19 {
+  background: url('modal/Reptile/lizard.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body20 .fact {
+  margin-left: 50%;
+}
+
+.modal-body20 {
+  background: url('modal/Reptile/snake.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body21 .fact {
+  margin-left: 50%;
+}
+
+.modal-body21 {
+  background: url('modal/Reptile/tortoise.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body22 .fact {
+  margin-left: 50%;
+}
+
+.modal-body22 {
+  background: url('modal/Reptile/turtle.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body23 .fact {
+  margin-left: 50%;
+}
+
+.modal-body23 {
+  background: url('modal/Amphibies/frog.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body24 .fact {
+  margin-left: 50%;
+}
+
+.modal-body24 {
+  background: url('modal/Amphibies/salamender.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body25 .fact {
+  margin-left: 50%;
+}
+
+.modal-body25 {
+  background: url('modal/Amphibies/toad.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body26 .fact {
+  margin-left: 50%;
+}
+
+.modal-body26 {
+  background: url('modal/Amphibies/sesilia.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body27 .fact {
+  margin-left: 50%;
+}
+
+.modal-body27 {
+  background: url('modal/fishes/clownfish.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body28 .fact {
+  margin-left: 50%;
+}
+
+.modal-body28 {
+  background: url('modal/fishes/dolphin.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body29 .fact {
+  margin-left: 50%;
+}
+
+.modal-body29 {
+  background: url('modal/fishes/flounder.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body30 .fact {
+  margin-left: 50%;
+}
+
+.modal-body30 {
+  background: url('modal/fishes/lionfish.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body31 .fact {
+  margin-left: 50%;
+}
+
+.modal-body31 {
+  background: url('modal/fishes/stingray.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body32 .fact {
+  margin-left: 50%;
+}
+
+.modal-body32 {
+  background: url('modal/fishes/shark.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+.modal-body33 .fact {
+  margin-left: 50%;
+}
+
+.modal-body33 {
+  background: url('modal/fishes/killerwhale.png');
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 400px;
+}
+
+footer .closing{
+  text-align: center;
+  padding: 30px;
+}
+footer p {
+  font-size: 16px;
+  font-family: 'myFont', Arial, Helvetica, sans-serif;
+  color: #ffd700;
+}
+
+
+
+
+
+
+
+/****************************MEDIA*****************************/
+/*Tablet*/
+@media screen and (max-width: 1050px) {
+  .ke-atas {
+   right: 5%;
+   top: 87%;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  .header {
+    padding: 100px;
+  } 
+  .ke-atas button {
+  left: 87%;
+  top: 81%;
+}
+
+/*Phone 1*/
+@media screen and (max-width: 678px) {
+  .header {
+    padding: 15px;
+  }
+  .button ul {
+    padding: 0px;
+  }
+  .isi .jumbotron i {
+    font-size: 10px;
+  }
+  .isi .jumbotron img {
+    font-size: 15px;
+  }
+  .isi .jumbotron h1 {
+    font-size: 40px;
+  }
+  .modal {
+    left: 2%;
+    top: 5vh;
+  }
+  .modal-dialog {
+  max-width: 300px;
+  max-height: 500px;
+  /*min-height: 600px;*/
+  }  
+
+  .modal-body1, .modal-body2, .modal-body3,.modal-body4, .modal-body5, .modal-body6, .modal-body7, .modal-body8, .modal-body9, .modal-body10, .modal-body11, .modal-body12, .modal-body13, .modal-body14, .modal-body15, .modal-body16,.modal-body17, .modal-body18, .modal-body19,.modal-body20,.modal-body21, .modal-body22, .modal-body23, .modal-body24, .modal-body25,.modal-body26, .modal-body27, .modal-body28, .modal-body29, .modal-body30, .modal-body31, .modal-body32, .modal-body33 {
+    background: #fff;
+  }
+
+    .modal-body1:after {
+    background: url('modal/Birds/parrot.png');
+  }
+
+  .modal-body2:after {
+    background: url('modal/Birds/owl.png');
+  }
+
+  .modal-body3:after {
+    background: url('modal/Birds/eagle.png');
+  }
+
+  .modal-body4:after {
+    background: url('modal/Birds/dove.png');
+  }
+
+  .modal-body5:after {
+    background: url('modal/Birds/cassowary.png');
+  }
+
+  .modal-body6:after {
+    background: url('modal/Birds/hummingbird.png');
+  }
+
+  .modal-body7:after {
+    background: url('modal/Birds/toucan.png');
+  }
+
+  .modal-body8:after {
+    background: url('modal/mammals/panda.png');
+  }
+
+  .modal-body9:after {
+    background: url('modal/mammals/cheetah.png');
+  }
+
+  .modal-body10:after {
+    background: url('modal/mammals/giraffe.png');
+  }
+
+  .modal-body11:after {
+    background: url('modal/mammals/palmcivet.png');
+  }
+
+  .modal-body12:after {
+    background: url('modal/mammals/elephant.png');
+  }
+
+  .modal-body13:after {
+    background: url('modal/mammals/lion.png');
+  }
+
+  .modal-body14:after {
+    background: url('modal/mammals/tiger.png');
+  }
+
+  .modal-body15:after {
+    background: url('modal/mammals/wolf.png');
+  }
+
+  .modal-body16:after {
+    background: url('modal/Reptile/monitorlizard.png');
+  }
+
+  .modal-body17:after {
+    background: url('modal/Reptile/crocodile.png');
+  }
+
+  .modal-body18:after {
+    background: url('modal/Reptile/chameleon.png');
+  }
+
+  .modal-body19:after {
+    background: url('modal/Reptile/lizard.png');
+  }
+
+  .modal-body20:after {
+    background: url('modal/Reptile/snake.png');
+  }
+
+  .modal-body21:after {
+    background: url('modal/Reptile/tortoise.png');
+  }
+
+  .modal-body22:after {
+    background: url('modal/Reptile/turtle.png');
+  }
+
+  .modal-body23:after {
+    background: url('modal/Amphibies/frog.png');
+  }
+
+  .modal-body24:after {
+    background: url('modal/Amphibies/salamender.png');
+  }
+
+  .modal-body25:after {
+    background: url('modal/Amphibies/toad.png');
+  }
+
+  .modal-body26:after {
+    background: url('modal/Amphibies/sesilia.png');
+  }
+
+  .modal-body27:after {
+    background: url('modal/fishes/clownfish.png');
+  }
+
+  .modal-body28:after {
+    background: url('modal/fishes/dolphin.png');
+  }
+
+  .modal-body29:after {
+    background: url('modal/fishes/flounder.png');
+  }
+
+  .modal-body30:after {
+    background: url('modal/fishes/lionfish.png');
+  }
+
+  .modal-body31:after {
+    background: url('modal/fishes/stingray.png');
+  }
+
+  .modal-body32:after {
+    background: url('modal/fishes/shark.png');
+  }
+
+  .modal-body33:after {
+    background: url('modal/fishes/killerwhale.png');
+  }
+
+  .modal-body1:after, .modal-body2:after, .modal-body3:after,.modal-body4:after, .modal-body5:after, .modal-body6:after, .modal-body7:after, .modal-body8:after, .modal-body9:after, .modal-body10:after, .modal-body11:after, .modal-body12:after, .modal-body13:after, .modal-body14:after, .modal-body15:after, .modal-body16:after,.modal-body17:after, .modal-body18:after, .modal-body19:after,.modal-body20:after,.modal-body21:after, .modal-body22:after, .modal-body23:after, .modal-body24:after, .modal-body25:after,.modal-body26:after, .modal-body27:after, .modal-body28:after, .modal-body29:after, .modal-body30:after, .modal-body31:after, .modal-body32:after, .modal-body33:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 6.5vh;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 1;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    }
+  .modal table td {
+  font-size: 14px;
+  }
+  .fact {
+  margin: 0 !important;
+  padding: 0px 20px;
+  }
+  .fact h3 {
+  font-size: 1.5rem;
+  }
+
+}
+
+
+/*Phone2*/
+@media screen and (max-width: 575px) {
+  .modal {
+  left:23%;
+  }
+  .ke-atas  button {
+  left: 84%;
+  top: 77%;
+  }
+  footer img {
+    width: 150px;
+  }
+  footer p {
+  font-size: 14px;
+  }
+}
+
+
+/*Phone3*/
+@media screen and (max-width: 450px) {
+  .modal {
+  left: 15%;
+  }
+  .ke-atas button {
+  left: 80%;
+}
+
+/*Phone4*/
+@media screen and (max-width: 375px) {
+  .modal {
+  left: 7%;
+  }
+}
