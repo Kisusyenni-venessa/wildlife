@@ -2,7 +2,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden;
+	overflow-x: hidden!important;
 	background: black;
 	font-family:'Alata', sans-serif;
 }
@@ -635,37 +635,6 @@ nav ul li a:before {
 	}
 	
 }
-/*@keyframes swimright3 {
-	0%
-	{
-		transform: translateY(200px);
-		left: 0%; 
-		top: 100%;
-	}
-	25%
-	{
-		transform: translateY(220px);
-		top: 100%;
-	}
-	50%
-	{
-		transform: translateY(250px);
-		top: 100%;
-	}
-	75%
-	{
-		transform: translateY(270px);
-		top: 100%;
-	}
-	100%
-	{
-		transform: translateY(290px);
-		left: 150%;
-		top: 100%;
-	}
-	
-}*/
-
 
 @keyframes swimleft {
 	0%
@@ -719,8 +688,8 @@ nav ul li a:before {
 	
 }
 
-#contact {
-	z-index: 10;
+.container {
+	z-index: 10!important;
 }
 .col-md-12 {
 	text-align: center;
@@ -733,13 +702,13 @@ nav ul li a:before {
 }
 .col-md-6 {
 	z-index: 10;
+	transform: translate(20);
 }
 
 form{
 	padding: 0;
 	text-align: center;
 	display: block;
-	/*margin-top: 50px;*/
 }
 form p {
 	text-align: left;
@@ -783,7 +752,7 @@ form .submit:hover{
 #cave {
 	background:url(../cave.png);
 	height: 700px;
-	max-width: 1400px;
+	min-width: 1348px;
 	bottom: 0px;
 	background-size:cover;
 }
@@ -821,25 +790,28 @@ form .submit:hover{
 	text-align: center;
 }
 
-.bat1, .bat2 {
+/*.bat1, .bat2 {
 	z-index: 1;
-}
+	position: absolute;
+}*/
 .bat1 img{
 	top: 1670px;
 	right: 235px;
-	position: absolute;
 	height:100px;
 	width:120px;
+	z-index: 1!important;
+	position: absolute;
 }
 
 .bat2 img{
 	top: 1640px;
 	left: 1px;
-	position: absolute;
 	height:112px;
 	width:112px;
 	animation: go 1s steps(5) infinite,
 				fly 18s linear infinite;
+	z-index: 1!important;
+	position: absolute;
 }
 
 @keyframes go{
@@ -865,10 +837,7 @@ form .submit:hover{
 @media screen and (max-width: 1050px) {
   /************TOP*************/
 	body {
-  	overflow-x: hidden;
-  	}
-  	#logo {
-  	top: 25vh
+  	overflow-x: hidden!important;
   	}
   	#logo img {
   	width: 100%;
@@ -890,24 +859,42 @@ form .submit:hover{
   	}
 
   	/*BOTTOM*/
+  	.container {
+  	-webkit-transform: translate(-15%,0);
+  	-moz-transform: translate(-15%,0);
+  	}
+  	#cave form{
+	padding: 7% 7% 8.5% 0%;
+	}
+	.social {
+		padding: 20% 0% 4% 7%;
+	}
   	.social ul i {
 	font-size: .8rem;
 	}
-  /*	.social {
-	padding: 60px 100px 30px 50px;
-	}
-	.social p i {
-	margin-left: 0px;
-	}*/
 
 }
 /*TABLET2*/
+@media screen and (max-width: 980px) {
+	.container {
+  	-webkit-transform: translate(-30%,0);
+  	-moz-transform: translate(-30%,0);
+  	}
+}
+/*TABLET3*/
+@media screen and (max-width: 870px) {
+	.container {
+  	-webkit-transform: translate(-33.5%,0);
+  	-moz-transform: translate(-33%,0);
+  	}
+}
+/*TABLET4*/
 @media screen and (max-width: 800px) {
 	.social i {
 	font-size: .5rem;
 	}
 	#cave form{
-	padding: 40px 10px 60px 60px;
+	padding: 40px 10px 60px 0px;
 	}
 	.social {
 	padding: 40px 60px 30px 10px;
@@ -915,6 +902,8 @@ form .submit:hover{
 	.social .add p {
 	margin-left: 0px;
 	}
+	/*.col-md-6{
+	transform: translate(-40%,10%);*/
 }
 /*TABLET3*/
 @media screen and (max-width: 768px) {
@@ -943,6 +932,10 @@ form .submit:hover{
 	}
 
 	/*BOTTOM*/
+	.container {
+  	-webkit-transform: translate(-37%,0);
+  	-moz-transform: translate(-37%,0);
+  	}
 	#row .col-md-12 h1 {
 	size: 1.5rem !important;
 	}
@@ -956,7 +949,6 @@ form .submit:hover{
 	}
 	#cave form{
 	padding: 10px 20px 10px 60px;
-
 	}
 	.social {
 	padding: 15px 60px 10px 20px;
@@ -965,6 +957,7 @@ form .submit:hover{
 
 	.social ul {
 	padding-top: 5px;
+	padding-right: 5%;
 	}
 	.social ul li {
 	display: inline-block;
@@ -978,6 +971,7 @@ form .submit:hover{
 	}
 	.closing img {
 	width: 100px;
+	margin-right: 5%;
 	}
 
 }
@@ -986,7 +980,10 @@ form .submit:hover{
 {
 	#cave form{
 	padding: 10px 100px;
-
+	}
+	.container {
+	-webkit-transform: translate(-55%,0);
+	-moz-transform: translate(-55%,0);
 	}
 	.social {
 	padding: 30px 100px;
@@ -994,6 +991,7 @@ form .submit:hover{
 	}
 	.add p {
 	margin:0 ;
+	padding-right: 5%;
 	}
 
 }
@@ -1033,14 +1031,19 @@ form .submit:hover{
 	height: 80%;
 	}
 	/*BOTTOM*/
-	#contact {
-	padding-top: 15%;
+	.container {
+	-webkit-transform: translate(-28%,0);
+	-moz-transform: translate(-28%,0);
 	}
 	#contact .col-md-12 h1 {
 	font-size: 1.3rem;
+	margin-right: 5%;
 	}
 	#contact p {
 	font-size: .7rem;
+	}
+	form p {
+	margin-left: 37%;
 	}
 	.form-control{
 	width: 280px !important;	
@@ -1050,6 +1053,7 @@ form .submit:hover{
 	}
 	#cave form{
 	padding: 10px 50px;
+	margin-right: 60px;
 	}
 	.social {
 	padding: 15px 50px;
@@ -1060,26 +1064,54 @@ form .submit:hover{
 	.closing img {
 	width: 100px;
 	}
+	.closing p{
+		margin-right: 5%;
+	}
 
 }
+
+/*PHONE2*/
 @media screen and (max-width: 450px) {
-	#contact {
-	padding-top: 25%;
+	.container {
+	-webkit-transform: translate(-32%,0);
+	-moz-transform: translate(-32%,0);
+	padding-top: 5vh;
+	}
+	.bat1 img {
+		top: 1791px;
 	}
 }
-/*PHONE2*/
-@media screen and (max-width: 376px) {
+
+/*PHONE3*/
+@media screen and (max-width: 375px) {
 	#logo {
   	top: 40vh
   	}
 	#cave form {
-	left: 6.2vh !important; 
+	left: 6.2vh; 
 	}
 	#cave form{
 	padding: 10px 30px;
-
 	}
 	.social {
 	padding: 15px 30px;
+	}
+	#contact {
+	-webkit-transform: translate(-34%,0);
+	-moz-transform: translate(-34%,0);
+	}
+}
+
+/*PHONE 4*/
+@media screen and (max-width: 320px) {
+	form p {
+		padding-left: 2%;
+	}
+	.form-control{
+	width: 250px !important;
+	}
+	.container {
+	-webkit-transform: translate(-36%,0)!important;
+	-moz-transform: translate(-36%,0)!important;
 	}
 }
